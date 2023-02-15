@@ -1,0 +1,79 @@
+main{
+    height: 100vh;
+}
+
+div {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+
+h5 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+
+body {
+  background-color: #80ced7;
+}
+
+.form-style {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #ccdbdc;
+  box-shadow: 3px 3px 8px 3px #003249;
+}
+
+footer {position: relative;
+  width: 100%;
+  top:80px ;
+  background-color: #003249;
+  color: white;
+}
+
+.logindiv {
+  position: relative;
+  margin: auto;
+  width: 50%;
+  height: 50vh;
+}
+h5::after {
+  display: block;
+  content: "";
+  background: #003249;
+  height: 2px;
+  position: relative;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #003249;
+  font-weight: 400;
+}
+a:hover {
+  text-decoration: underline;
+  color: #007ea7;
+}
+.logo{
+    height: 25px;
+    width: 30px;
+}
+
+
+.customBtn{
+    border: black 0.1px solid;
+    border-radius: 4px;
+    background: #007ea7;
+    width: 37px;
+    height: 37px;
+}
+
+.customBtn:hover {
+    background: #ccdbdc;
+}
