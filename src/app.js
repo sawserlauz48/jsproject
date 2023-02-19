@@ -1,5 +1,7 @@
 import PAGES from "./models/pageModel.js";
 import { pageChange } from "./routes/router.js";
+import "./pages/RegisterPage.js";
+import "./pages/LoginPage.js";
 
 // linking links to divs
 const navLogoLink = document.getElementById("nav-logo-link");

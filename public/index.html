@@ -74,7 +74,7 @@
     </header>
 
     <main class="mb-3">
-        <div id="home-page" class="container d-none">
+        <div id="home-page" class="container d-block">
             <h1 class="text-center">HOME PAGE</h1>
             <h5 class="">here you can look at your pictures throw silde show</h5>
             <div class="d-flex mb-3 me-auto p-2 justify-content-between">
@@ -149,11 +149,11 @@
             </h5>
         </div>
 
-        <div id="register-page" class="container d-block">
+        <div id="register-page" class="container d-none">
             <h1 class="text-center mb-5">REGISTER PAGE</h1>
             <h5 class="mb-5">Signup and start buy add and like pictures</h5>
 
-            <form class="form-style">
+            <form class="form-style onsubmit=" event.preventDefault()"">
                 <div class="d-none alertdiv" id="email-exists">*The email already exists</div>
                 <div class="row">
                     <div class="form-floating mb-3 col">
@@ -247,7 +247,9 @@
             <h5 class="mb-5">login and start buy add and like pictures</h5>
             <div class="logindiv">
                 <form class="form-style text-center">
+                    <div id="loginAlert" class="mb-3 d-none alertdiv">invalid email and/or password</div>
                     <div class="form-floating mb-3 col">
+
                         <input type="email" class="form-control" id="loginEmailInput" placeholder="Email Address" />
                         <label class="mx-3" for="loginEmailInput">Email Address</label>
                     </div>
@@ -256,6 +258,10 @@
                         <label class="mx-3" for="loginPasswordInput">Password</label>
                     </div>
                     <div class="">
+                        <div class="mb-3 form-check d-flex justify-content-center">
+                            <label class="form-check-label mx-1" for="rememberMe">Remember me</label>
+                            <input type="checkbox" class="form-check-input mx-1" id="rememberMe" />
+                        </div>
                         <div class="mb-3">
                             Not registered yet? <a href="http://">Rigester Here</a>
                         </div>

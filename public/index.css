@@ -72,8 +72,14 @@ a:hover {
     background: #007ea7;
     width: 37px;
     height: 37px;
+    
 }
 
 .customBtn:hover {
     background: #ccdbdc;
+}
+
+.alertdiv{
+  color:red;font-size: 1rem;
+  
 }

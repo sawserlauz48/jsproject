@@ -189,14 +189,17 @@ registerBtn.addEventListener("click", () => {
     users = JSON.parse(users);
     for (let user of users) {
       if (user.email === inputEmail.value) {
-        document.getElementById("email-exists").classList.remove("d-none"); //need fix
-        scrollTop(0);
+        document.getElementById("email-exists").classList.remove("d-none");
+        scrollTo(0, 0);
         return;
+
+
       }
     }
     users = [...users, newUser];
     localStorage.setItem("users", JSON.stringify(users));
   }
+  document.getElementById("email-exists").classList.add("d-none");
   pageChange(PAGES.LOGIN);
 
 });
